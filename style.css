@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', Helvetica, sans-serif;
+}
+
+body {
+  background-color: #c77ee9;
+}
+
+/*
+*
+* HEADER
+*
+*/
+
+.container__header {
+  height: 6rem;
+  padding: 24px 16px;
+  margin-bottom: 1.5rem;
+}
+
+.header__logo {
+  user-select: none;
+  pointer-events: none;
+}
+
+/*MAIN
+*/
+
+.container__main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.operacoes-criptografia__entrada {
+  padding: 24px 0px;
+}
+
+.operacoes-criptografia__entrada label {
+  display: none;
+}
+
+.operacoes-criptografia__entrada textarea {
+  background-color: #f3f5fc;
+  border: none;
+  width: 100%;
+  height: 13rem;
+  resize: none;
+  outline: none;
+  color: #041933;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.operacoes-criptografia__entrada textarea::placeholder {
+  color: #6e0a71;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.operacoes-criptografia__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.operacoes-criptografia__info img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.operacoes-criptografia__info p {
+  font-size: 0.85rem;
+  color: #450a75;
+}
+
+.operacoes-criptografia__botoes {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.operacoes-criptografia__botoes__criptografar {
+  background-color: #5c0a71;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.operacoes-criptografia__botoes__criptografar:active {
+  background-color: #5c0a71;
+}
+
+.operacoes-criptografia__botoes__descriptografar {
+  background-color: #e6ecf3;
+  color: #600a71;
+  border: 1px solid #590a71;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+
+.operacoes-criptografia__botoes__descriptografar:active {
+  background-color: #ffffff;
+}
+
+.operacoes-criptografia__botoes__criptografar:hover,
+.operacoes-criptografia__botoes__descriptografar:hover,
+.operacoes-criptografia__saida__btn-copiar #btn-copiar:hover {
+  cursor: pointer;
+}
+
+.operacoes-criptografia__saida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  height: auto;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: 20px;
+}
+
+.operacoes-criptografia__saida__box h3 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.operacoes-criptografia__saida__box p {
+  color: #495057;
+  line-break: anywhere;
+  font-size: 1rem;
+}
+
+.operacoes-criptografia__saida__box img {
+  display: none;
+}
+
+.operacoes-criptografia__saida__btn-copiar #btn-copiar {
+  border: 1px solid #590a71;
+  border-radius: 1rem;
+  color: #430a71;
+  background-color: white;
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 15px;
+  display: none;
+  justify-content: center;
+}
+
+.operacoes-criptografia__saida__btn-copiar #btn-copiar:hover {
+  cursor: pointer;
+}
+
+.operacoes-criptografia__saida__btn-copiar #btn-copiar:active {
+  box-shadow: 0 0 5px #500a71;
+}
+
+/*
+*
+*   FOOTER:
+*
+*/
+
+.container__rodape {
+  display: flex;
+  flex-direction: row;
+  background-color: #5c0a71;
+  color: white;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Inter', Helvetica, sans-serif;
+}
+
+.container__rodape ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container__rodape ul > li {
+  padding-right: 7px;
+}
+
+.container__rodape .texto {
+  display: none;
+}
+
+.container__rodape a {
+  fill: white;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

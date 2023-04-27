@@ -1,0 +1,148 @@
+/*
+*
+*   TABLET:
+*
+*/
+
+@media screen and (min-width: 768px) {
+  .operacoes-criptografia__info p {
+    font-size: 0.8rem;
+  }
+
+  .operacoes-criptografia__botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .operacoes-criptografia__botoes__criptografar {
+    width: 50%;
+    margin-right: 2%;
+    margin-bottom: 0.5rem;
+  }
+
+  .operacoes-criptografia__botoes__descriptografar {
+    width: 50%;
+  }
+
+  .operacoes-criptografia__saida {
+    padding: 40px 15px;
+  }
+
+  .container__rodape .texto {
+    display: block;
+  }
+}
+
+/*
+*
+*   LAPTOP:
+*
+*/
+
+@media screen and (min-width: 1024px) {
+  .container__main {
+    padding: 0 5rem;
+  }
+
+  .operacoes-criptografia__entrada textarea {
+    margin-bottom: 7rem;
+    width: 30rem;
+  }
+
+  .operacoes-criptografia__saida {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 320px;
+    height: 36.5rem;
+    padding: 20px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+
+  .operacoes-criptografia__saida::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+  }
+
+  .operacoes-criptografia__botoes {
+    width: calc(100% - 450px);
+  }
+
+  .operacoes-criptografia__botoes__criptografar,
+  .operacoes-criptografia__botoes__descriptografar {
+    width: 30rem;
+  }
+
+  .operacoes-criptografia__saida__box img {
+    display: inline-block;
+    text-align: center;
+    width: 18rem;
+  }
+}
+
+@media screen and (min-width: 1090px) {
+  .operacoes-criptografia__entrada textarea {
+    width: 35rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .operacoes-criptografia__entrada textarea {
+    width: 50rem;
+    margin-bottom: 12rem;
+  }
+
+  .operacoes-criptografia__saida {
+    height: 42.5rem;
+  }
+
+  .container__rodape {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .operacoes-criptografia__entrada textarea {
+    margin-bottom: 40rem;
+  }
+
+  .operacoes-criptografia__botoes {
+    width: 65%;
+  }
+
+  .operacoes-criptografia__botoes__criptografar,
+  .operacoes-criptografia__botoes__descriptografar {
+    width: 50%;
+    height: 8rem;
+    border-radius: 30px;
+    font-size: 1.5rem;
+  }
+
+  .operacoes-criptografia__saida {
+    height: 78rem;
+    width: 45rem;
+  }
+
+  .container__rodape {
+    height: 4rem;
+  }
+
+  .container__rodape a,
+  p {
+    font-size: 1.5rem;
+  }
+
+  .container__rodape svg {
+    transform: scale(2);
+    margin: 0 1.2rem 0 0.7rem;
+  }
+
+  .container__rodape .icone {
+    height: 1.6rem;
+  }
+}
